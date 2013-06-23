@@ -46,8 +46,8 @@ DISABLE_UPDATE_PROMPT=true
 plugins=(git ruby rails cap github)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/.config
-source ~/.zsh/.aliases
+source ~/.zsh/config
+source ~/.zsh/aliases
 # source ~/.zsh/less.zsh
 
 # Customize to your needs...

@@ -4,7 +4,7 @@ setopt NOCORRECTALL
 
 # set default editor & pager
 export VISUAL=vim
-export EDITOR=vim
+export EDITOR=subl
 export PAGER=less
 
 #Colors
