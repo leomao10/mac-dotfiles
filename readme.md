@@ -15,7 +15,7 @@ The setting for this dotfiles is mainly for following environment:
 - Setup apple account
 - Install and setup Alfred if required
 	- Use alt + ` for hotkey
-- Install Xcode
+- Install XCode & XCode commandline tools
 - Install Postgres
 	- Download it from heroku
 	- Set it to open on start up
@@ -27,6 +27,7 @@ The setting for this dotfiles is mainly for following environment:
 - Change layout for terminal
 - Install oh-my-zsh and switch shell to zsh
 - Install homebrew
+- Install gcc
 - Install homesick
 
 	```
