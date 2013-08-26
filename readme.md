@@ -4,7 +4,7 @@ The setting for this dotfiles is mainly for following environment:
 
 - Mac OS X Mountain Lion
 - homesick
-- oh-my-zsh
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - rbenv + ruby installer + rbenv-default-gems + [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash)
 - subl
 
