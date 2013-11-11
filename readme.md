@@ -8,6 +8,11 @@ The setting for this dotfiles is mainly for following environment:
 - rbenv + ruby installer + rbenv-default-gems + [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash)
 - subl
 
+```
+mkdir ~/bin
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+```
+
 
 # Steps to Set up the mac
 
