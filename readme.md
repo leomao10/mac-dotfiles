@@ -16,6 +16,10 @@ The setting for this dotfiles is mainly for following environment:
 - Install and setup Alfred if required
 	- Use alt + ` for hotkey
 - Install XCode & XCode commandline tools
+
+	```
+	xcode-select --install
+	```
 - Install Postgres
 	- Download it from heroku
 	- Set it to open on start up
