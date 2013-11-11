@@ -37,7 +37,7 @@ The setting for this dotfiles is mainly for following environment:
 	```
 	gem install homesick
 	```
-- Install rbenv and ruby-installer	
+- Install rbenv and ruby-build	
 - Install dot-files
 	
 	```
