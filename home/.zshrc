@@ -59,3 +59,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PATH="./.bundle/binstubs:$PATH"
 export CPPFLAGS=-I/opt/X11/include
+export LC_ALL="en_US.UTF-8"
