@@ -3,7 +3,7 @@
 	email = leoliang_climber@hotmail.com
 [github]
 	user = leomao10
-	token = 
+	token =
 [diff]
 	renames = copies
 [color]
@@ -12,7 +12,7 @@
 	status = true
 	ui = true
 [core]
-  excludesfile = /Users/leo/.gitignore
+	excludesfile = /Users/leo/.gitignore_global
   autocrlf = input
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
