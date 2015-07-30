@@ -42,7 +42,7 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails cap github)
+plugins=(git chruby ruby rails cap github)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/config
@@ -55,7 +55,11 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby 2.1.1
 
 export PATH="./.bundle/binstubs:$PATH"
 export CPPFLAGS=-I/opt/X11/include
+export CC=/usr/bin/gcc
 export LC_ALL="en_US.UTF-8"
