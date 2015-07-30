@@ -55,7 +55,6 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PATH="./.bundle/binstubs:$PATH"
 export CPPFLAGS=-I/opt/X11/include
