@@ -3,8 +3,9 @@
 setopt NOCORRECTALL
 
 # set default editor & pager
-export VISUAL="subl"
-export EDITOR="subl"
+export VISUAL="subl -w"
+export EDITOR="subl -w"
+export BUNDLER_EDITOR="subl"
 export PAGER=less
 
 #Colors
