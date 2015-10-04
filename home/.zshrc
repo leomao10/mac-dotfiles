@@ -55,11 +55,24 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
+# For chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby 2.1.1
+chruby 2.2.2
+# For chruby
 
-export PATH="./.bundle/binstubs:$PATH"
+# For binstub
+export RUBYGEMS_GEMDEPS=-
+# For binstub
+
+# For GCC
 export CPPFLAGS=-I/opt/X11/include
 export CC=/usr/bin/gcc
 export LC_ALL="en_US.UTF-8"
+# For GCC
+
+# For direnv
+eval "$(direnv hook zsh)"
+# For direnv
+
+[[ -f /Users/leo/.sentinel/current/bin/sentinel ]] && eval "$(/Users/leo/.sentinel/current/bin/sentinel init -)"
