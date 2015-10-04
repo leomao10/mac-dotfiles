@@ -62,7 +62,7 @@ chruby 2.2.2
 # For chruby
 
 # For binstub
-export RUBYGEMS_GEMDEPS=-
+
 # For binstub
 
 # For GCC
