@@ -42,28 +42,18 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git chruby ruby rails cap github)
+plugins=(git my_chruby ruby rails cap github)
+
+# Customize to your needs...
+export MANUAL_CHRUBY=true
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:/opt/bin:/opt/local/bin:/usr/sbin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/config
 source ~/.zsh/aliases
 source ~/.zsh/less.zsh
-
-# Customize to your needs...
-export PATH=$HOME/bin:$PATH
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-
-# For chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby 2.2.2
-# For chruby
-
-# For binstub
-
-# For binstub
 
 # For GCC
 export CPPFLAGS=-I/opt/X11/include

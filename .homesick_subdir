@@ -2,3 +2,4 @@
 .zsh
 .rbenv
 .zsh
+.oh-my-zsh/custom/plugins/my_chruby
