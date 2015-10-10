@@ -2,22 +2,13 @@
 
 The setting for this dotfiles is mainly for following environment:
 
-- Mac OS X 10.9 Mavericks
-- homesick
+- Mac OS X 10.9 Mavericks or above
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- rbenv + ruby installer + rbenv-default-gems + [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash)
-- subl
-
-	```
-	mkdir ~/bin
-	ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-	```
-
+- chruby + ruby installer + direnv
+- rcm
+- atom
 
 # Steps to Set up the mac
-
-- Setup google account
-- Setup apple account
 - Install and setup Alfred if required
 	- Use alt + ` for hotkey
 - Install XCode & XCode commandline tools
@@ -32,20 +23,38 @@ The setting for this dotfiles is mainly for following environment:
 
 	```
 	ssh-keygen -t rsa -C "leo.liang@devs.org"
-	```	
+	```
 - Change layout for terminal
 - Install oh-my-zsh and switch shell to zsh
 - Install homebrew
-- Install gcc
-- Install homesick
 
 	```
-	gem install homesick
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	```
-- Install rbenv and ruby-build	
-- Install dot-files
-	
+
+- Install homebrew bundle
+
 	```
-	homesick clone leomao10/mac-dotfiles.git
-	homesick symlink mac-dotfiles
+	brew tap Homebrew/bundle
 	```
+- Download dotfiles
+
+	```
+	git clone git@github.com:leomao10/mac-dotfiles.git ~/.dotfiles
+	```
+
+- Symlink Brewfiles
+	```
+	ln -s .dotfiles/Brewfiles ~/Brewfiles
+	```
+
+- Install rest of dependent apps with
+
+	```
+	homebrew bundle
+	```
+
+- Setup all other dotfiles with rcm
+```
+rcup ~/.dotfiles
+```
