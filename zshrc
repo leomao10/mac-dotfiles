@@ -65,4 +65,8 @@ export LC_ALL="en_US.UTF-8"
 eval "$(direnv hook zsh)"
 # For direnv
 
+# Ruby Binstub
+export RUBYGEMS_GEMDEPS=-
+# Ruby Binstub
+
 [[ -f /Users/leo/.sentinel/current/bin/sentinel ]] && eval "$(/Users/leo/.sentinel/current/bin/sentinel init -)"

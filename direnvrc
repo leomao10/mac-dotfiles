@@ -12,5 +12,5 @@ use_ruby() {
 
 use_rails_env(){
   use ruby
-  export PATH="$PWD/bin:$PATH"
 }
+#export PATH="$PWD/bin:$PATH"
