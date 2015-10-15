@@ -1,4 +1,5 @@
 bin/*
+.bundle/binstubs
 
 
 # Compiled source #
