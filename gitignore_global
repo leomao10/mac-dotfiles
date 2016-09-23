@@ -1,6 +1,4 @@
 bin/*
-.bundle/binstubs
-
 
 # Compiled source #
 ###################
@@ -41,3 +39,4 @@ Thumbs.db
 
 # Direnv file
 .envrc
+.env.development

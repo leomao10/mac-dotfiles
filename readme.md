@@ -11,11 +11,13 @@ The setting for this dotfiles is mainly for following environment:
 # Steps to Set up the mac
 - Install and setup Alfred if required
 	- Use alt + ` for hotkey
+
 - Install XCode & XCode commandline tools
 
 	```
 	xcode-select --install
 	```
+
 - Install Postgres
 	- Download it from heroku
 	- Set it to open on start up
@@ -24,8 +26,11 @@ The setting for this dotfiles is mainly for following environment:
 	```
 	ssh-keygen -t rsa -C "leo.liang@devs.org"
 	```
+
 - Change layout for terminal
+
 - Install oh-my-zsh and switch shell to zsh
+
 - Install homebrew
 
 	```
@@ -37,6 +42,7 @@ The setting for this dotfiles is mainly for following environment:
 	```
 	brew tap Homebrew/bundle
 	```
+
 - Download dotfiles
 
 	```
