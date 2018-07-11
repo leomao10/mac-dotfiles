@@ -21,11 +21,17 @@ The setting for this dotfiles is mainly for following environment:
 - Install Postgres
 	- Download it from heroku
 	- Set it to open on start up
+
 - Generate ssh key
 
 	```
 	ssh-keygen -t rsa -C "leo.liang@devs.org"
 	```
+
+- Add ssh key to Github
+
+- Generate access token for current laptop
+  https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization/
 
 - Change layout for terminal
 

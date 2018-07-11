@@ -44,3 +44,5 @@
 	dn = diff --name-only
 [push]
 	default = simple
+[credential]
+	helper = osxkeychain
