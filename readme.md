@@ -19,10 +19,6 @@ The setting for this dotfiles is mainly for following environment:
 	xcode-select --install
 	```
 
-- Install Postgres
-	- Download it from heroku
-	- Set it to open on start up
-
 - Generate ssh key
 
 	```
@@ -32,10 +28,6 @@ The setting for this dotfiles is mainly for following environment:
 - [Add ssh key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
 - [Generate access token for current laptop](https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization/)
-
-- Change layout for terminal
-
-- Install oh-my-zsh and switch shell to zsh
 
 - Install homebrew
 
@@ -71,3 +63,7 @@ The setting for this dotfiles is mainly for following environment:
 	ln -s ~/.dotfiles/rcrc ~/.rcrc
 	rcup
 	```
+
+- Change layout for terminal(MAN, font 14)
+
+- Install oh-my-zsh and switch shell to zsh
