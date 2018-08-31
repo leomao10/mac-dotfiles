@@ -4,7 +4,8 @@ The setting for this dotfiles is mainly for following environment:
 
 - Mac OS X 10.9 Mavericks or above
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- chruby + ruby installer + direnv
+- rbenv
+- nvm
 - rcm
 - atom
 
@@ -54,9 +55,9 @@ The setting for this dotfiles is mainly for following environment:
 	git clone git@github.com:leomao10/mac-dotfiles.git ~/.dotfiles
 	```
 
-- Symlink Brewfiles
+- Symlink Brewfile
 	```
-	ln -s .dotfiles/Brewfiles ~/Brewfiles
+	ln -s .dotfiles/Brewfile ~/Brewfile
 	```
 
 - Install rest of dependent apps with
@@ -66,6 +67,7 @@ The setting for this dotfiles is mainly for following environment:
 	```
 
 - Setup all other dotfiles with rcm
-```
-rcup ~/.dotfiles
-```
+	```
+	ln -s ~/.dotfiles/rcrc ~/.rcrc
+	rcup
+	```
