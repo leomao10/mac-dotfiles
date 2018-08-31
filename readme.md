@@ -30,8 +30,7 @@ The setting for this dotfiles is mainly for following environment:
 
 - Add ssh key to Github
 
-- Generate access token for current laptop
-  https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization/
+- [Generate access token for current laptop](https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization/)
 
 - Change layout for terminal
 
