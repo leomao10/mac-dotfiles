@@ -28,7 +28,7 @@ The setting for this dotfiles is mainly for following environment:
 	ssh-keygen -t rsa -C "leo.liang@devs.org"
 	```
 
-- Add ssh key to Github
+- [Add ssh key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
 - [Generate access token for current laptop](https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization/)
 
