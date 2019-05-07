@@ -58,6 +58,8 @@ The setting for this dotfiles is mainly for following environment:
 	homebrew bundle
 	```
 
+- Install oh-my-zsh and switch shell to zsh
+
 - Setup all other dotfiles with rcm
 	```
 	ln -s ~/.dotfiles/rcrc ~/.rcrc
@@ -65,5 +67,3 @@ The setting for this dotfiles is mainly for following environment:
 	```
 
 - Change layout for terminal(MAN, font 14)
-
-- Install oh-my-zsh and switch shell to zsh
