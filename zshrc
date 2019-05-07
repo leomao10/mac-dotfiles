@@ -42,8 +42,7 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# plugins=(git my_chruby ruby rails cap github)
-plugins=(git rbenv ruby rails cap github nvm)
+plugins=(git rbenv ruby github nvm)
 
 # Customize to your needs...
 # export MANUAL_CHRUBY=true
