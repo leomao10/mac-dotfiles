@@ -27,7 +27,7 @@ The setting for this dotfiles is mainly for following environment:
 
 - [Add ssh key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
-- [Generate access token for current laptop](https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization/)
+- [Generate access token for current laptop](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line#using-a-token-on-the-command-line)
 
 - Install homebrew
 
