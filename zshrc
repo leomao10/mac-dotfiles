@@ -93,3 +93,13 @@ if [ -f '/Users/lliang053/Downloads/google-cloud-sdk/path.zsh.inc' ]; then sourc
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/lliang053/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lliang053/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# MySQL setup
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
+
+# Error related to __NSPlaceholderDictionary:
+# https://github.com/darkskyapp/forecast-ruby/issues/13
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
