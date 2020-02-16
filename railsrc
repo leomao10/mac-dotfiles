@@ -1,0 +1,4 @@
+--database=postgresql
+--skip-sprockets
+--skip-test
+--skip-turbolinks
