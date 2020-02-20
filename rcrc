@@ -1,2 +1,2 @@
 EXCLUDES="readme.md"
-UNDOTTED="Brewfile"
+UNDOTTED="Brewfile my_rails_template.rb"
