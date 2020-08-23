@@ -28,7 +28,6 @@ export PROJECT_HOME=$HOME/Devel
 source ~/.zsh/config
 source ~/.zsh/aliases
 source ~/.zsh/less.zsh
-source $HOME/Library/Python/2.7/bin/virtualenvwrapper.sh
 
 # FOR SPACESHIP
 SPACESHIP_PROMPT_ORDER=(
