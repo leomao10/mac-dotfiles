@@ -1,2 +1,2 @@
 EXCLUDES="readme.md"
-UNDOTTED="Brewfile"
+UNDOTTED="Brewfile Brewfile.lock.json"

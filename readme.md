@@ -3,7 +3,7 @@
 The setting for this dotfiles is mainly for following environment:
 
 - Mac OS X 10.9 Mavericks or above
-- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- zsh
 - rbenv
 - nvm
 - rcm
@@ -57,8 +57,6 @@ The setting for this dotfiles is mainly for following environment:
 	```
 	homebrew bundle
 	```
-
-- Install oh-my-zsh and switch shell to zsh
 
 - Setup all other dotfiles with rcm
 	```
