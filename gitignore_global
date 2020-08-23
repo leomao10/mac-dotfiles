@@ -40,3 +40,6 @@ Thumbs.db
 # Direnv file
 .envrc
 .env.development
+
+# asdf versions file
+.tool-versions
