@@ -42,57 +42,26 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rbenv ruby github nvm)
+plugins=(git ruby github)
 
 # Customize to your needs...
-# export MANUAL_CHRUBY=true
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:/opt/bin:/opt/local/bin:/usr/sbin:$PATH"
+
+export PROJECT_HOME=$HOME/Devel
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/config
 source ~/.zsh/aliases
 source ~/.zsh/less.zsh
+source $HOME/Library/Python/2.7/bin/virtualenvwrapper.sh
 
 # For GCC
 # export CPPFLAGS=-I/opt/X11/include
 # export CC=/usr/bin/gcc
 export LC_ALL="en_US.UTF-8"
 # For GCC
-
-# For nvm
-. "/usr/local/opt/nvm/nvm.sh"
-autoload -U add-zsh-hook
-
-load-nvmrc() {
-  local node_version="$(nvm version)"
-  local nvmrc_path="$(nvm_find_nvmrc)"
-
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_version=$(cat "${nvmrc_path}")
-    local nvmrc_node_version=$(nvm version "${nvmrc_version}")
-
-    if [ "$nvmrc_node_version" = "N/A" ]; then
-      echo "$nvmrc_version is not install, please run 'nvm install' to install it"
-    elif [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm use
-    fi
-  fi
-}
-
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-# For nvm
-
-# For direnv
-# For direnv
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/lliang053/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/lliang053/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/lliang053/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lliang053/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # MySQL setup
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
@@ -103,3 +72,19 @@ export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
 # Error related to __NSPlaceholderDictionary:
 # https://github.com/darkskyapp/forecast-ruby/issues/13
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+#For Cloud SDK
+export CLOUD_SDK_PATH="$HOME/google-cloud-sdk"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/lliang053/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/lliang053/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/lliang053/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/lliang053/google-cloud-sdk/completion.zsh.inc'; fi
+#For Cloud SDK
+
+# For openssl setup
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+. /usr/local/opt/asdf/asdf.sh
