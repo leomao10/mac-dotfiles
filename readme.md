@@ -65,4 +65,9 @@ The setting for this dotfiles is mainly for following environment:
 	rcup
 	```
 
+- Install zsh plugins
+	```
+	zplug install
+	```
+
 - Change layout for terminal(MAN, font 14)
