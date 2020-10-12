@@ -50,6 +50,7 @@ The setting for this dotfiles is mainly for following environment:
 - Symlink Brewfile
 	```
 	ln -s .dotfiles/Brewfile ~/Brewfile
+	ln -s .dotfiles/Brewfile.lock.json ~/Brewfile.lock.json
 	```
 
 - Install rest of dependent apps with
