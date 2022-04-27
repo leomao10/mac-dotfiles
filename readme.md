@@ -13,17 +13,7 @@ The setting for this dotfiles is mainly for following environment:
 - Install and setup Alfred if required
 	- Use alt + ` for hotkey
 
-- Install XCode & XCode commandline tools
-
-	```
-	xcode-select --install
-	```
-
-- Generate ssh key
-
-	```
-	ssh-keygen -t rsa -C "leo.liang@devs.org"
-	```
+- [Generate ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 - [Add ssh key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
@@ -56,7 +46,7 @@ The setting for this dotfiles is mainly for following environment:
 - Install rest of dependent apps with
 
 	```
-	homebrew bundle
+	brew bundle
 	```
 
 - Setup all other dotfiles with rcm
