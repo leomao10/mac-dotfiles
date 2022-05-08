@@ -3,9 +3,9 @@
 setopt NOCORRECTALL
 
 # set default editor & pager
-export VISUAL="atom -nw"
-export EDITOR="atom -nw"
-export BUNDLER_EDITOR="atom"
+export VISUAL="code -nw"
+export EDITOR="code -nw"
+export BUNDLER_EDITOR="code"
 export PAGER=less
 
 #Colors
