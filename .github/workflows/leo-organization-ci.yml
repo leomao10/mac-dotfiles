@@ -9,4 +9,4 @@ on:
 
 jobs:
   caling-reuse-workflow-in-dot-github:
-    uses: leomao10/.github/.github/workflows/reusable-workflow.yml@master
+    uses: leomao10/.github/workflows/reusable-workflow.yml@master
