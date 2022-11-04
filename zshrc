@@ -21,8 +21,6 @@ zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-synta
 
 zplug "plugins/ruby", from:oh-my-zsh
 
-zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
-
 zplug load
 
 export PROJECT_HOME=$HOME/Devel
@@ -30,6 +28,7 @@ export PROJECT_HOME=$HOME/Devel
 source ~/.zsh/config
 source ~/.zsh/aliases
 source ~/.zsh/less.zsh
+source /opt/homebrew/opt/spaceship/spaceship.zsh
 
 # FOR SPACESHIP
 SPACESHIP_PROMPT_ORDER=(
@@ -39,9 +38,12 @@ SPACESHIP_PROMPT_ORDER=(
   node
   ruby
   venv
-  pyenv
 )
 # FOR SPACESHIP
+
+# FOR zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Theme
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
@@ -78,7 +80,7 @@ export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 
-source /opt/homebrew/opt/asdf/asdf.sh
+source /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # For Java
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
