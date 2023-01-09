@@ -15,7 +15,7 @@ export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug "zsh-users/zsh-completions",              defer:0
-zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-history-substring-search", defer:3
 
 zplug "plugins/ruby", from:oh-my-zsh
 
