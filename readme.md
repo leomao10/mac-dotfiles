@@ -4,10 +4,8 @@ The setting for this dotfiles is mainly for following environment:
 
 - Mac OS X 10.9 Mavericks or above
 - zsh
-- rbenv
-- nvm
+- asdf
 - rcm
-- atom
 
 # Steps to Set up the mac
 - Install and setup Alfred if required
