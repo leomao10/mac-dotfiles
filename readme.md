@@ -25,12 +25,6 @@ The setting for this dotfiles is mainly for following environment:
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	```
 
-- Install homebrew bundle
-
-	```
-	brew tap Homebrew/bundle
-	```
-
 - Download dotfiles
 
 	```
