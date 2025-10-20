@@ -1,27 +1,10 @@
-if [[ ! -d /usr/local/opt/zplug ]];then
-  brew install zplug
-  export ZPLUG_HOME=/usr/local/opt/zplug
-  source $ZPLUG_HOME/init.zsh
-  zplug install
-fi
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
-
-zplug "zsh-users/zsh-completions",              defer:0
-zplug "zsh-users/zsh-autosuggestions",          defer:2, on:"zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting",      defer:3, on:"zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-syntax-highlighting"
-
-zplug "plugins/ruby", from:oh-my-zsh
-
-zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
-
-zplug load
+antidote load
 
 # Customize to your needs...
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/share/npm/bin"
-export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/sbin:/opt/bin:/opt/local/bin:/usr/sbin:$PATH"
 
 export PROJECT_HOME=$HOME/Devel
@@ -53,31 +36,12 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40
 export LC_ALL="en_US.UTF-8"
 # For GCC
 
-# MySQL setup
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
-export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
-export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
-
-# Error related to __NSPlaceholderDictionary:
-# https://github.com/darkskyapp/forecast-ruby/issues/13
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-#For Cloud SDK
-export CLOUD_SDK_PATH="$HOME/google-cloud-sdk"
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/lliang053/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/lliang053/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/lliang053/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/lliang053/google-cloud-sdk/completion.zsh.inc'; fi
-#For Cloud SDK
 
 # For openssl setup
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 
-source /usr/local/opt/asdf/asdf.sh
 
 # For Java
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
